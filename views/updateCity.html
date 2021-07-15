@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Weather Web App</title>
+</head>
+<body>
+    <center>
+        <h2>Add / Update City Weather</h2>
+        <br />
+        <lable>Add City</lable>
+        <form action="/addCity" method="post">
+            <input type="text" placeholder="Enter city" name="city" required>
+            <br><br>
+            <input type="text" placeholder="Enter weather" name="weather" required>
+            <br><br>
+            <button type="submit">Add City Weather</button>
+        </form>
+
+        <br /><hr /><br />
+        <lable>Update City Weather</lable>
+        <form action="/updateCity" method="POST">
+            <input type="text" placeholder="Enter city" name="city" required>
+            <br><br>
+            <input type="text" placeholder="Enter weather" name="weather" required>
+            <br><br>
+            <button type="submit">Update City Weather</button>
+        </form>
+
+        <br /><hr /><br />
+        <a href="/">Back</a>
+    </center>
+</body>
+</html>
